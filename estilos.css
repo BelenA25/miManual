@@ -14,14 +14,14 @@
 .visibleBody{
     margin-top: 230px;
 }
-.tittlePage{
-    position: absolute!important;
+h1{
+    position: absolute !important;
     margin-top: 60px;
     margin-left: 100px;
     font-size: 70px;
 }
 .miniTittle{
-    position: absolute!important;
+    position: absolute !important;
     margin-top: 120px;
     margin-left: 100px;
     font-size: 40px;
