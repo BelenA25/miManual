@@ -1,0 +1,43 @@
+.encabezado{
+    background: rgb(168,67,96);
+    background: linear-gradient(90deg, rgba(168,67,96,1) 0%, rgba(255,153,182,1) 26%, rgba(245,122,157,1) 49%, rgba(50,168,65,1) 78%, rgba(122,245,137,1) 100%);
+    background-position: center;
+    background-size: cover;
+    min-width :100%;
+    position:fixed;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    left:0; right:0; top:0;
+    color: #fff;
+}
+.visibleBody{
+    padding: 220px
+}
+body{
+    background-color: rgb(247, 247, 247);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    font-family: "Courier New", Courier, monospace;
+}
+table{
+    font: 1.5em;
+    font-family: "Courier New", Courier, monospace;
+    font-size: larger;
+    line-height: 4ch;
+    border: #b2b2b2 1px solid;
+    width: 50%;
+}
+td, th {
+    border: black 2px ;
+}
+h1{
+    font: 2em ;
+}
+h2{
+    font: 2em ;
+}
+h3{
+    font: 2em ;
+}

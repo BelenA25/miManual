@@ -5,62 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElementosHTML</title>
-    <style>
-        body{
-            background-color: rgb(210, 234, 241);
-            background-image: url("https://img.freepik.com/vector-premium/textura-fondo-acuarela-abstracta-azul-rosa-publicaciones-redes-sociales_199112-629.jpg?w=2000");
-            background-size: cover;
-            background-repeat:no-repeat;
-            background-position: center center;
-        }
-        table{
-            font: 1.5em harrington;
-            font-size: larger;
-            line-height: 4ch;
-            border: #b2b2b2 1px solid;
-        }
-        td, th {
-            border: black 2px ;
-        }
-        h1{
-            font: 2em harrington;
-            font-style: initial;
-        }
-        h2{
-            font: 2em harrington;
-            font-style: oblique;
-        }
-        h3{
-            font: 2em harrington;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body >
     <center>
-    <h2>RECURSOS PARA DESARROLLADORES</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Descripcion</th>
-                <th>Enlace</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>MDN</td>
-                <td>Link sobre css, html, JavaScript y APIS web.	</td>
-                <td><a href="https://developer.mozilla.org/es/" target="_blank">Ir a la pagina</a></a></td>
-            </tr>
-            <tr>
-                <td>HTML STANDARD</td>
-                <td>Especificacion de HTML</td>
-                <td><a href="https://html.spec.whatwg.org/" target="_blank">Ir a la pagina</a></a></td>
-            </tr>
-            
-        </tbody>    
-    </table>
-    <hr>
+        <div class="encabezado">
+            <h2>RECURSOS PARA DESARROLLADORES</h2>
+            <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Enlace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MDN</td>
+                    <td>Link sobre css, html, JavaScript y APIS web.	</td>
+                    <td><a href="https://developer.mozilla.org/es/" target="_blank">Ir a la pagina</a></a></td>
+                </tr>
+                <tr>
+                    <td>HTML STANDARD</td>
+                    <td>Especificacion de HTML</td>
+                    <td><a href="https://html.spec.whatwg.org/" target="_blank">Ir a la pagina</a></a></td>
+                </tr>
+            </tbody>    
+        </table>
+    </div>
+    <div class="visibleBody">
     <h2>ELEMENTOS HTML</h2>
     <table>
         <thead>
@@ -278,8 +251,6 @@
         </tbody>    
     </table>
 </center>
-<address>
-    Camargo Aramayo Maria Belen :)
-</address>
+</div>
 </body>
 </html>
