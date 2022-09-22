@@ -10,21 +10,21 @@
     margin-top:auto;
     left:0; right:0; top:0;
     color: #fff;
+    height: 150px;
 }
 .visibleBody{
-    margin-top: 230px;
+    margin-top: 200px;
 }
 h1{
     position: absolute !important;
-    margin-top: 60px;
-    margin-left: 100px;
-    font-size: 70px;
+    width: 20%;
+    font-size: 50px;
 }
 .miniTittle{
     position: absolute !important;
-    margin-top: 120px;
-    margin-left: 100px;
-    font-size: 40px;
+    width: 20%;
+    margin-top: 80px;
+    font-size: 20px;
 }
 body{
     background-color: rgb(247, 247, 247);
@@ -44,9 +44,28 @@ table{
 td, th {
     border: black 2px ;
 }
+#tittle{
+    float:right;
+    margin-right: 70px;
+}
 h2{
     font: 2em ;
 }
 h3{
     font: 2em ;
+}
+.mozilla{
+    float: right;
+    margin-right: -350px;
+    margin-top: 70px;
+}
+.html{
+    float: right;
+    margin-right: -200px;
+    margin-top: 70px;
+}
+.htmlValidador{
+    float: right;
+    margin-right: -50px;
+    margin-top: 70px;
 }
