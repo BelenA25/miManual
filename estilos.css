@@ -14,36 +14,39 @@
     left:0; right:0; top:0;
     color: #fff;
     height: 150px;
-    display: flex;          /*flexbox*/
-    align-items: center;    /*centrar elementos de manera vertical*/
-    justify-content: space-between;
+    display: flex!important;          /*flexbox*/
+    align-items: center!important;    /*centrar elementos de manera vertical*/
+    justify-content: space-between!important;
 }
 .contenedor-flexible-1{
-    display: flex;
-    margin-left: 200px;
-    flex-direction: column;
+    display: flex!important;
+    margin-left: 200px!important;
+    flex-direction: column!important;
 }
 .tittle{
-    font-size: 350%;
+    font-size: 350%!important;
 }
 .miniTittle{
-    font-size: 150%;
+    font-size: 150%!important;
 }
 .contenedor-flexible-2{
     display: flex;
-    font-size: 150%;
+    font-size: 150%!important;
 }
 .elemento-flexible-2{
-    width: 170px;
+    width: 170px!important;
+}
+#navhtml{
+    color: #fff;
 }
 .contenedor-flexible-3{
-    display: flex;
-    flex-direction: column;
+    display: flex!important;
+    flex-direction: column!important;
 }
 .contenedor-flexible-4{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex!important;
+    flex-direction: row!important;
+    justify-content: space-between!important;
     margin-right: 60px;
 }
 .visibleBody{
@@ -68,11 +71,4 @@ td, th {
 #tittle{
     float:right;
     margin-right: 70px;
-}
-img{ 
-    width:42px!important;
-    height:42px!important;
-}
-a{
-    color: #fff;
 }
