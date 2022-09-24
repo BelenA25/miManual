@@ -70,8 +70,8 @@ td, th {
     margin-right: 70px;
 }
 img{ 
-    width:42px;
-    height:42px;
+    width:42px!important;
+    height:42px!important;
 }
 a{
     color: #fff;
