@@ -13,10 +13,11 @@
     margin-top:auto;
     left:0; right:0; top:0;
     color: #fff;
-    height: 150px;
+    height: 130px;
     display: flex!important;          /*flexbox*/
     align-items: center!important;    /*centrar elementos de manera vertical*/
     justify-content: space-between!important;
+    font-size: 13px;
 }
 .contenedor-flexible-1{
     display: flex!important;
@@ -25,6 +26,10 @@
 }
 .tittle{
     font-size: 350%!important;
+}
+#tittle2{
+    font-size: 140%!important;
+    font-weight: 300;
 }
 .miniTittle{
     font-size: 150%!important;
@@ -50,8 +55,13 @@
     justify-content: center;
     gap: 40%;
 }
+.contenedor-flexible-5{
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
 .visibleBody{
-    margin-top: 200px;
+    margin-top: 170px;
 }
 body{
     background-color: rgb(247, 247, 247);
