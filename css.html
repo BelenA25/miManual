@@ -30,13 +30,149 @@
     <div class="visibleBody">
         <div class="bloque">
             <div class="elementos"><u>INDICE</u></div>
-            <div class="elementos"><a id="indice" href="#elementosGenericos">1. Elementos Genericos</a></div>
-            <div class="elementos"><a id="indice" href="#elementosSemanticos">2. Elementos Semanticos</a></div>
-            <div class="elementos"><a id="indice" href="#manejoTexto">3. Manejo de texto</a></div>
-            <div class="elementos"><a id="indice" href="#tablas">4. Tablas</a></div>
-            <div class="elementos"><a id="indice" href="#enlaces">5. Enlaces</a></div>
-            <div class="elementos"><a id="indice" href="#imagenes">6. Imagenes</a></div>
+            <div class="elementos"><a id="indice" href="#colores">1. Colores</a></div>
+            <div class="elementos"><a id="indice" href="#selectores">2. Selectores</a></div>
+            <div class="elementos"><a id="indice" href="#modeloCajas">3. Modelo de cajas</a></div>
+            <div class="elementos"><a id="indice" href="#flexbox">4. Flexbox</a></div>
         </div>
+        <h1>CSS</h1>
+        <h1>(Cascading Style Sheets)</h1>
+        <h2 id="colores">COLORES</h2>
+        <P>Existen tres formatos que podemos usar para establecer los valores de estos colores:</P>
+        <h3>1. Usando los nombres de colores:</h3>
+        <img src="https://louisem.com/wp-content/uploads/2015/09/color-names-purple.png" style="width: 500px;" >
+        <br><br>
+        <a href="https://www.w3.org/TR/css-color-3/#svg-color" style="color:black;" target="_blank">Lista extendida de los nombres de colores</a>
+        <h3>2. Usando el modelo RGB</h3>
+        <h4>2.1. Usando la función rgb(r,g,b)</h4>
+        <img src="https://img2.freepng.es/20190313/zt/kisspng-rgb-color-model-additive-color-portable-network-gr-5c89905e88f320.298942231552519262561.jpg" style="width: 500px;">
+        <pre>
+            rgb(red, green, blue)
+
+            Donde:
+
+                <b>El parámetro red</b>
+            Especifica la intensidad del  rojo presente en la mezcla
+            Los valores posibles son: [0-255] o [0%-100%]
+
+                <b>El parámetro green</b>
+            Especifica la intensidad del  verde presente en la mezcla
+            Los valores posibles son: [0-255] o [0%-100%]
+
+                <b>El parámetro blue</b>
+            Especifica la intensidad del  azul presente en la mezcla
+            Los valores posibles son: [0-255] o [0%-100%]
+
+        </pre>
+        <h4>2.2. Usando un valor hexadecimal</h4>
+        <img src="https://codedcreative.co/wp-content/uploads/2016/10/10.12_CreateColorPalette-6.gif" style="width: 500px;">
+        <br><br>
+        <a href="https://g.co/kgs/sxEn2S" style="color:black;"  target="_blank" >Herramienta en linea</a>
+        <h3>3. Usando el modelo HSL</h3>
+        <img src="https://support.vsco.co/hc/article_attachments/360056393452/hsl-sky.gif">
+        <pre>
+                hsl(hue, saturation, lightness)
+
+            Donde:
+
+                <b>El parámetro hue (tono)</b>
+            Es el color
+            Los valores posibles son: [0-360]
+            Podemos obtener los valores de la rueda de colores
+
+                <b>El parámetro saturation (saturación)</b>
+            Determina que tan fuerte o vivo es un color
+            Los valores posibles son: [0%-100%]
+            Donde 100% significa completamente saturado (color muy vivo)
+            Donde 0% significa sin saturación alguna (color apagado)
+
+
+                <b>El parámetro ligthness (Luminosidad)</b>
+            Permite establecer la claridad u oscuridad de un color
+            Los valores posibles son de: [0%-100%]
+            Donde 100% significa completamente blanco (brillantez total)
+            Donde 50% es normal
+            Donde 0% es competamente negro (sin brillantez)
+        </pre>
+        <a href="https://hslpicker.com/" style="color:black;"  target="_blank">Herramienta en linea</a>
+        <h4>Crea tu combinacion de colores con:</h4>
+        <a href="https://color.adobe.com/es/create/color-wheel" target="_blank"><img src="https://escueladigital.com.mx/blog/wp-content/uploads/2020/06/adobecolor.jpg" style="width: 500px;">a</a>
+        <h2 id="selectores">SELECTORES</h2>
+        <h3>1. SELECTOR UNIVERSAL (*)</h3>
+        <img src="https://pbs.twimg.com/media/FLO2NVMUUAgBIUG.jpg" style="width: 500px;">
+        <h3>2. SELECTORES DE TIPO (p)</h3>
+        <img src="https://blog.hubspot.es/hubfs/media/ejemploselectortipocss.png" style="width: 500px;">
+        <H3>3. SELECTOR DE CLASE (.foo)</H3>
+        <img src="https://blog.hubspot.es/hubfs/media/ejemploselectorclasecss.png" style="width: 500px;">
+        <h3>4. SELECTORES DE ID (#foo)</h3>
+        <img src="https://blog.hubspot.es/hubfs/media/ejemploselectoridcss.png" style="width: 500px;">
+        <h3>5. SELECTORES DE ATRIBUTO (a[foo])</h3>
+        <img src="https://blog.hubspot.es/hubfs/media/ejemploselectoratributocss.png" style="width: 500px;">
+        <br><br>
+        <a href="https://www.w3.org/TR/selectors-3/" style="color:black;"  target="_blank">Mas acerca de selectores</a>
+        <h2 id="modeloCajas">MODELO DE CAJAS</h2>
+        <img src="https://lenguajecss.com/css/modelo-de-cajas/que-es/modelo-de-cajas.png" style="width: 500px;">
+        <pre>
+            <b>Contenido</b>
+
+            Es el área donde se encuentra el contenido del elemento(texto, imagen, etc).
+            
+            <b>Relleno</b>
+            
+            Es el área de relleno del elemento.
+
+            <b>Borde</b>
+            
+            Es el borde del elemento. 
+
+            <b>Margen</b>
+
+            Es el margen del elemento. Se usa para separar el elemento de sus vecinos.
+
+        </pre>
+        <h2 id="flexbox">FLEXBOX</h2>
+        <img src="https://aulaideal.com/wp-content/uploads/2020/08/flexbox-1.webp" style="width: 500px;">
+        <pre>
+            <B>flex-start</B>
+
+            - No existe distancia entre el lado inicial del eje principal y su elemento adyacente.
+            - No existe distancia entre los elementos contiguos de una línea
+            - Si el contenedor flexible es de una sola línea y es demasiado pequeño para contener 
+            todos los elementos, los elementos flexibles se desbordan en dirección del eje principal.
+            
+            <b>flex-end</b>
+
+            - No existe distancia entre el lado final del eje principal y su elemento adyacente.
+            - No existe distancia entre los elementos contiguos de una línea.
+            - Si el contenedor flexible es de una sola linea y es demasiado pequeño para contener 
+            todos los elementos, los elementos flexibles se desbordan en dirección contraria del eje 
+            principal.
+            
+            <b>center</b>
+
+            - No existe espacio entre los elementos adyacentes de una línea.
+            - La distancia entre los lados del eje principal y sus elementos adyacentes es la misma.
+            - Si el contenedor flexible es de una sola línea y es demasiado pequeño para contener 
+            todos los elementos, los elementos flexibles se desbordan por igual en ambas direcciones.
+
+            <b>space-between</b>
+
+            - No existe espacio entre los lados del eje principal y sus elementos adyacentes.
+            - La distancia entre los elementos adyacentes de una linea es la misma.
+            - Si solo existe un elemento flexible en la línea, este se coloca pegado al lado inicial del eje 
+            principal.
+            - Si el contenedor flexible es de una sola línea y es demasiado pequeño para contener todos los 
+            elementos, los elementos flexibles se desbordan en dirección del eje principal.
+
+            <b>space-around</b>
+            
+            - La distancia entre elementos adyacentes de una línea es la misma.
+            - La distancia entre los lados del eje principal y sus elementos adyacentes es la mitad de la 
+            distancia que existe entre elementos adyacentes.
+            - Si solo existe un elemento flexible en la línea, este se coloca al medio.
+            - Si el contenedor flexible es demasiado pequeño para contener todos los elementos y es de una 
+            sola linea, los elementos flexibles se desbordan por igual en ambas direcciones.
+        </pre>
     </div>
     </center>
 </body>
