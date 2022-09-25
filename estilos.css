@@ -61,7 +61,6 @@ body{
 }
 table{
     font: 1.5em;
-    font-size: larger;
     line-height: 4ch;
     width: 50%;
     border-collapse: collapse;
@@ -69,11 +68,19 @@ table{
 th, td {
     border: 1px solid black;
 }
-tr:hover{
-    background-color: rgba(255,153,182,1);
-    color: #fff;
-}
 #tittle{
     float:right;
     margin-right: 70px;
+}
+tr:hover {
+    background-color: rgba(255,153,182,1);
+    color: #fff;
+    
+    box-shadow:  rgb(179, 112, 131) -1px 1px,  rgb(179, 112, 131) -2px 2px,  rgb(179, 112, 131) -3px 3px,  rgb(179, 112, 131) -4px 4px,  rgb(179, 112, 131) -5px 5px, rgba(179, 112, 131,0)-6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    
+    transition-delay: 0s;
+        transition-duration: 0.4s;
+        transition-property: all;
+    transition-timing-function: line;
 }
