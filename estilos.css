@@ -42,12 +42,13 @@
 .contenedor-flexible-3{
     display: flex!important;
     flex-direction: column!important;
+    margin-right: 100px;
 }
 .contenedor-flexible-4{
     display: flex!important;
     flex-direction: row!important;
-    justify-content: space-between!important;
-    margin-right: 60px;
+    justify-content: center;
+    gap: 40%;
 }
 .visibleBody{
     margin-top: 200px;
@@ -62,11 +63,15 @@ table{
     font: 1.5em;
     font-size: larger;
     line-height: 4ch;
-    border: #b2b2b2 1px solid;
     width: 50%;
+    border-collapse: collapse;
 }
-td, th {
-    border: black 2px ;
+th, td {
+    border: 1px solid black;
+}
+tr:hover{
+    background-color: rgba(255,153,182,1);
+    color: #fff;
 }
 #tittle{
     float:right;
