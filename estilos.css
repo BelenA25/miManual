@@ -2,8 +2,8 @@
     font-family: "Courier New", Courier, monospace;
 }
 .encabezado{
-    background: rgb(168,67,96);
-    background: linear-gradient(90deg, rgba(168,67,96,1) 0%, rgba(255,153,182,1) 26%, rgba(245,122,157,1) 49%, rgba(50,168,65,1) 78%, rgba(122,245,137,1) 100%);
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 4%, rgba(252,70,107,1) 100%);
     background-position: center;
     background-size: cover;
     min-width :100%;
@@ -54,6 +54,29 @@
     flex-direction: row!important;
     justify-content: center;
     gap: 40%;
+}
+.bloque{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 4%, rgba(252,70,107,1) 100%);
+    position: fixed;
+    align-items: center!important; 
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-left: 5%;
+    justify-content: space-between!important;
+    padding: 20px;
+    gap: 20px;
+}
+.elementos{
+    width: 250px;
+}
+#indice{
+    text-decoration:none;
+    color: #fff;
+}
+#indice:hover {
+    color: #000;
 }
 .contenedor-flexible-5{
     display: flex;
