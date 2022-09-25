@@ -1,6 +1,28 @@
 *{
     font-family: "Courier New", Courier, monospace;
 }
+.index{
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 4%, rgba(252,70,107,1) 100%);
+    vertical-align: middle;
+    height: 100%;
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
+    min-height:100vh;
+    color: #000;
+}
+#indexnav{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+.contenedor-flexible-22{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-weight: 530;
+}
 .encabezado{
     background: rgb(63,94,251);
     background: linear-gradient(90deg, rgba(63,94,251,1) 4%, rgba(252,70,107,1) 100%);
@@ -41,8 +63,9 @@
 .elemento-flexible-2{
     width: 170px!important;
 }
-#navhtml{
+#nav{
     color: #fff;
+    text-decoration: none;
 }
 .contenedor-flexible-3{
     display: flex!important;
