@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,16 @@
     <title>CSS</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <div class="encabezado">
         <div class="contenedor-flexible-1">
-            <a id="nav" href="index.html"><div class="tittle">HTML</div></a>
-            <a id="nav" href="index.html"><div class="miniTittle">manual</div></a>
+            <a id="nav" href="index.html">
+                <div class="tittle">HTML</div>
+            </a>
+            <a id="nav" href="index.html">
+                <div class="miniTittle">manual</div>
+            </a>
         </div>
         <div class="contenedor-flexible-2">
             <div class="elemento-flexible-2"><a id="nav" href="html.html">HTML</a></div>
@@ -21,34 +27,54 @@
         <div class="contenedor-flexible-3">
             <div id="tittle2">RECURSOS PARA DESARROLLADORES</div>
             <div class="contenedor-flexible-4">
-                <div class="elemento-flexible-11"><a class="mozilla" href="https://developer.mozilla.org/es/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Firefox_Developer_Edition_logo%2C_2017.png" style=" width:35px;height:35px;"></a></div>
-                <div class="elemento-flexible-12"><a class="html" href="https://html.spec.whatwg.org/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/103/103077.png" style=" width:35px;height:35px;"></a></div>
+                <div class="elemento-flexible-11"><a class="mozilla" href="https://developer.mozilla.org/es/"
+                        target="_blank"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/6/68/Firefox_Developer_Edition_logo%2C_2017.png"
+                            style=" width:35px;height:35px;"></a></div>
+                <div class="elemento-flexible-12"><a class="html" href="https://html.spec.whatwg.org/"
+                        target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/103/103077.png"
+                            style=" width:35px;height:35px;"></a></div>
             </div>
         </div>
     </div>
     <center>
-    <div class="visibleBody">
-        <div class="bloque">
-            <div class="elementos"><u>INDICE</u></div>
-            <div class="elementos"><a id="indice" href="#colores">1. Colores</a></div>
-            <div class="elementos"><a id="indice" href="#selectores">2. Selectores</a></div>
-            <div class="elementos"><a id="indice" href="#modeloCajas">3. Modelo de cajas</a></div>
-            <div class="elementos"><a id="indice" href="#flexbox">4. Flexbox</a></div>
-        </div>
-        <h1>CSS</h1>
-        <h1>(Cascading Style Sheets)</h1>
-        <h2 id="colores">COLORES</h2>
-        <P>Existen tres formatos que podemos usar para establecer los valores de estos colores:</P>
-        <h3>1. Usando los nombres de colores:</h3>
-        <img src="https://louisem.com/wp-content/uploads/2015/09/color-names-purple.png" style="width: 500px;" >
-        <br><br>
-        <a href="https://www.w3.org/TR/css-color-3/#svg-color" style="color:black;" target="_blank">Lista extendida de los nombres de colores</a>
-        <h3>2. Usando el modelo RGB</h3>
-        <h4>2.1. Usando la función rgb(r,g,b)</h4>
-        <img src="https://img2.freepng.es/20190313/zt/kisspng-rgb-color-model-additive-color-portable-network-gr-5c89905e88f320.298942231552519262561.jpg" style="width: 500px;">
-        <pre>
-            rgb(red, green, blue)
+        <div class="flexboxCSS">
+            <div class="bloque">
+                <div class="elementos"><u>
+                        <center>INDICE</center>
+                    </u></div>
+                <div class="elementos"><a id="indice" href="#colores">1. Colores</a></div>
+                <div class="elementos"><a id="indice" href="#selectores">2. Selectores</a></div>
+                <div class="elementos"><a id="indice" href="#modeloCajas">3. Modelo de cajas</a></div>
+                <div class="elementos"><a id="indice" href="#flexbox">4. Flexbox</a></div>
+            </div>
+            <div class="visibleBodyCSS">
+                <center>
+                    <h1>CSS</h1>
+                    <h1>(Cascading Style Sheets)</h1>
+                    <h2 id="colores">COLORES</h2>
+                </center>
+                <P>Existen tres formatos que podemos usar para establecer los valores de estos colores:</P>
+                <center>
+                    <h3>1. Usando los nombres de colores:</h3>
+                    <img src="https://louisem.com/wp-content/uploads/2015/09/color-names-purple.png"
+                        style="width: 500px;">
 
+                    <br><br>
+                    <a href="https://www.w3.org/TR/css-color-3/#svg-color" style="color:black;" target="_blank">Lista
+                        extendida
+                        de los nombres de colores</a>
+                    <h3>2. Usando el modelo RGB</h3>
+                </center>
+                <h4>2.1. Usando la función rgb(r,g,b)</h4>
+                <center>
+                    <img src="http://product.corel.com/help/Common/CDGS/540223850/Shared/CorelDRAW-03-color-manage-RGB.png"
+                        style="width: 500px;">
+                    <br><br>
+                    rgb(red, green, blue)
+                </center>
+
+                <pre>
             Donde:
 
                 <b>El parámetro red</b>
@@ -63,14 +89,18 @@
             Especifica la intensidad del  azul presente en la mezcla
             Los valores posibles son: [0-255] o [0%-100%]
 
-        </pre>
-        <h4>2.2. Usando un valor hexadecimal</h4>
-        <img src="https://codedcreative.co/wp-content/uploads/2016/10/10.12_CreateColorPalette-6.gif" style="width: 500px;">
-        <br><br>
-        <a href="https://g.co/kgs/sxEn2S" style="color:black;"  target="_blank" >Herramienta en linea</a>
-        <h3>3. Usando el modelo HSL</h3>
-        <img src="https://support.vsco.co/hc/article_attachments/360056393452/hsl-sky.gif">
-        <pre>
+                </pre>
+                <h4>2.2. Usando un valor hexadecimal</h4>
+                <center>
+                    <img src="https://codedcreative.co/wp-content/uploads/2016/10/10.12_CreateColorPalette-6.gif"
+                        style="width: 500px;">
+                    <br><br>
+                    <a id="cssLink" href="https://g.co/kgs/sxEn2S" target="_blank">Herramienta en
+                        linea</a>
+                </center>
+                <h3>3. Usando el modelo HSL</h3>
+                <img src="https://support.vsco.co/hc/article_attachments/360056393452/hsl-sky.gif">
+                <pre>
                 hsl(hue, saturation, lightness)
 
             Donde:
@@ -94,25 +124,28 @@
             Donde 50% es normal
             Donde 0% es competamente negro (sin brillantez)
         </pre>
-        <a href="https://hslpicker.com/" style="color:black;"  target="_blank">Herramienta en linea</a>
-        <h4>Crea tu combinacion de colores con:</h4>
-        <a href="https://color.adobe.com/es/create/color-wheel" target="_blank"><img src="https://escueladigital.com.mx/blog/wp-content/uploads/2020/06/adobecolor.jpg" style="width: 500px;">a</a>
-        <h2 id="selectores">SELECTORES</h2>
-        <h3>1. SELECTOR UNIVERSAL (*)</h3>
-        <img src="https://pbs.twimg.com/media/FLO2NVMUUAgBIUG.jpg" style="width: 500px;">
-        <h3>2. SELECTORES DE TIPO (p)</h3>
-        <img src="https://blog.hubspot.es/hubfs/media/ejemploselectortipocss.png" style="width: 500px;">
-        <H3>3. SELECTOR DE CLASE (.foo)</H3>
-        <img src="https://blog.hubspot.es/hubfs/media/ejemploselectorclasecss.png" style="width: 500px;">
-        <h3>4. SELECTORES DE ID (#foo)</h3>
-        <img src="https://blog.hubspot.es/hubfs/media/ejemploselectoridcss.png" style="width: 500px;">
-        <h3>5. SELECTORES DE ATRIBUTO (a[foo])</h3>
-        <img src="https://blog.hubspot.es/hubfs/media/ejemploselectoratributocss.png" style="width: 500px;">
-        <br><br>
-        <a href="https://www.w3.org/TR/selectors-3/" style="color:black;"  target="_blank">Mas acerca de selectores</a>
-        <h2 id="modeloCajas">MODELO DE CAJAS</h2>
-        <img src="https://lenguajecss.com/css/modelo-de-cajas/que-es/modelo-de-cajas.png" style="width: 500px;">
-        <pre>
+                <a href="https://hslpicker.com/" style="color:black;" target="_blank">Herramienta en linea</a>
+                <h4>Crea tu combinacion de colores con:</h4>
+                <a href="https://color.adobe.com/es/create/color-wheel" target="_blank"><img
+                        src="https://escueladigital.com.mx/blog/wp-content/uploads/2020/06/adobecolor.jpg"
+                        style="width: 500px;">a</a>
+                <h2 id="selectores">SELECTORES</h2>
+                <h3>1. SELECTOR UNIVERSAL (*)</h3>
+                <img src="https://pbs.twimg.com/media/FLO2NVMUUAgBIUG.jpg" style="width: 500px;">
+                <h3>2. SELECTORES DE TIPO (p)</h3>
+                <img src="https://blog.hubspot.es/hubfs/media/ejemploselectortipocss.png" style="width: 500px;">
+                <H3>3. SELECTOR DE CLASE (.foo)</H3>
+                <img src="https://blog.hubspot.es/hubfs/media/ejemploselectorclasecss.png" style="width: 500px;">
+                <h3>4. SELECTORES DE ID (#foo)</h3>
+                <img src="https://blog.hubspot.es/hubfs/media/ejemploselectoridcss.png" style="width: 500px;">
+                <h3>5. SELECTORES DE ATRIBUTO (a[foo])</h3>
+                <img src="https://blog.hubspot.es/hubfs/media/ejemploselectoratributocss.png" style="width: 500px;">
+                <br><br>
+                <a href="https://www.w3.org/TR/selectors-3/" style="color:black;" target="_blank">Mas acerca de
+                    selectores</a>
+                <h2 id="modeloCajas">MODELO DE CAJAS</h2>
+                <img src="https://lenguajecss.com/css/modelo-de-cajas/que-es/modelo-de-cajas.png" style="width: 500px;">
+                <pre>
             <b>Contenido</b>
 
             Es el área donde se encuentra el contenido del elemento(texto, imagen, etc).
@@ -130,9 +163,9 @@
             Es el margen del elemento. Se usa para separar el elemento de sus vecinos.
 
         </pre>
-        <h2 id="flexbox">FLEXBOX</h2>
-        <img src="https://aulaideal.com/wp-content/uploads/2020/08/flexbox-1.webp" style="width: 500px;">
-        <pre>
+                <h2 id="flexbox">FLEXBOX</h2>
+                <img src="https://aulaideal.com/wp-content/uploads/2020/08/flexbox-1.webp" style="width: 500px;">
+                <pre>
             <B>flex-start</B>
 
             - No existe distancia entre el lado inicial del eje principal y su elemento adyacente.
@@ -173,7 +206,9 @@
             - Si el contenedor flexible es demasiado pequeño para contener todos los elementos y es de una 
             sola linea, los elementos flexibles se desbordan por igual en ambas direcciones.
         </pre>
-    </div>
+            </div>
+        </div>
     </center>
 </body>
+
 </html>
