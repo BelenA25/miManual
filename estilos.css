@@ -184,7 +184,7 @@ td a {
     width: 100%;
 }
 
-a:not(#tdlink) {
+a:not(#tdlink,#cssLink,#navInt) {
     background-image: linear-gradient(to right,
             #54b3d6,
             #54b3d6 50%,
@@ -198,7 +198,7 @@ a:not(#tdlink) {
     transition: all 0.3s ease-in-out;
 }
 
-a:not(#tdlink):before {
+a:not(#tdlink,#cssLink,#navInt):before {
     content: '';
     background: #54b3d6;
     display: block;
@@ -210,17 +210,18 @@ a:not(#tdlink):before {
     transition: all 0.3s ease-in-out;
 }
 
-a:not(#tdlink):hover {
+a:not(#tdlink,#cssLink,#navInt):hover {
     background-position: 0;
 }
 
-a:not(#tdlink):hover::before {
+a:not(#tdlink,#cssLink,#navInt):hover::before {
     width: 100%;
 }
-#cssLink {
+/**/
+#navInt {
     background-image: linear-gradient(to right,
-            #54b3d6,
-            #54b3d6 50%,
+            #ffffff,
+            #ffffff 50%,
             rgb(0, 0, 0) 50%);
     background-size: 200% 100%;
     background-position: -100%;
@@ -230,9 +231,10 @@ a:not(#tdlink):hover::before {
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
 }
-#cssLink:before {
+
+#navInt:before {
     content: '';
-    background: #54b3d6;
+    background: #ffffff;
     display: block;
     position: absolute;
     bottom: -3px;
@@ -241,14 +243,35 @@ a:not(#tdlink):hover::before {
     height: 3px;
     transition: all 0.3s ease-in-out;
 }
-#cssLink:hover {
+
+#navInt:hover {
     background-position: 0;
 }
-#cssLink:hover::before {
+
+#navInt:hover::before {
     width: 100%;
 }
 .visibleBodyCSS{
     width: 50%;
     text-align: justify;
     text-justify: inter-word;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgb(254,163,182);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }

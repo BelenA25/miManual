@@ -22,7 +22,12 @@
         <div class="contenedor-flexible-2">
             <div class="elemento-flexible-2"><a id="nav" href="html.html">HTML</a></div>
             <div class="elemento-flexible-2"><a id="nav" href="css.html">CSS</a></div>
-            <div class="elemento-flexible-2">MAS</div>
+            <div class="dropdown">
+                <div class="elemento-flexible-2"><a id="nav" hrerf="#">MAS</a></div>
+                <div class="dropdown-content">
+                    <a id="navInt" href="#">Ejemplo aplicado</a>
+                </div>
+            </div>
         </div>
         <div class="contenedor-flexible-3">
             <div id="tittle2">RECURSOS PARA DESARROLLADORES</div>
@@ -50,9 +55,9 @@
             </div>
             <div class="visibleBodyCSS">
                 <center>
-                    <h1>CSS</h1>
+                    <h1 id="colores">CSS</h1>
                     <h1>(Cascading Style Sheets)</h1>
-                    <h2 id="colores">COLORES</h2>
+                    <h2>COLORES</h2>
                 </center>
                 <P>Existen tres formatos que podemos usar para establecer los valores de estos colores:</P>
                 <center>
@@ -95,13 +100,14 @@
                     <img src="https://codedcreative.co/wp-content/uploads/2016/10/10.12_CreateColorPalette-6.gif"
                         style="width: 500px;">
                     <br><br>
-                    <a id="cssLink" href="https://g.co/kgs/sxEn2S" target="_blank">Herramienta en
-                        linea</a>
+                    <a id="cssLink" href="https://g.co/kgs/sxEn2S" target="_blank">Herramienta en linea</a>
+
+                    <h3>3. Usando el modelo HSL</h3>
+                    <img src="https://support.vsco.co/hc/article_attachments/360056393452/hsl-sky.gif">
+                    <br><br>
+                    hsl(hue, saturation, lightness)
                 </center>
-                <h3>3. Usando el modelo HSL</h3>
-                <img src="https://support.vsco.co/hc/article_attachments/360056393452/hsl-sky.gif">
                 <pre>
-                hsl(hue, saturation, lightness)
 
             Donde:
 
@@ -124,27 +130,39 @@
             Donde 50% es normal
             Donde 0% es competamente negro (sin brillantez)
         </pre>
-                <a href="https://hslpicker.com/" style="color:black;" target="_blank">Herramienta en linea</a>
-                <h4>Crea tu combinacion de colores con:</h4>
-                <a href="https://color.adobe.com/es/create/color-wheel" target="_blank"><img
-                        src="https://escueladigital.com.mx/blog/wp-content/uploads/2020/06/adobecolor.jpg"
-                        style="width: 500px;">a</a>
-                <h2 id="selectores">SELECTORES</h2>
+                <center>
+                    <a id="cssLink" href="https://hslpicker.com/" style="color:black;" target="_blank">Herramienta en
+                        linea</a>
+                    <h4>Crea tu combinacion de colores con:</h4>
+                    <a id="cssLink" href="https://color.adobe.com/es/create/color-wheel" target="_blank"><img
+                            id="selectores"
+                            src="https://escueladigital.com.mx/blog/wp-content/uploads/2020/06/adobecolor.jpg"
+                            style="width: 500px;">
+                    </a>
+                    <h2>SELECTORES</h2>
+                </center>
                 <h3>1. SELECTOR UNIVERSAL (*)</h3>
-                <img src="https://pbs.twimg.com/media/FLO2NVMUUAgBIUG.jpg" style="width: 500px;">
+                <center><img src="https://pbs.twimg.com/media/FLO2NVMUUAgBIUG.jpg" style="width: 500px;"></center>
                 <h3>2. SELECTORES DE TIPO (p)</h3>
-                <img src="https://blog.hubspot.es/hubfs/media/ejemploselectortipocss.png" style="width: 500px;">
+                <center><img src="https://blog.hubspot.es/hubfs/media/ejemploselectortipocss.png" style="width: 500px;">
+                </center>
                 <H3>3. SELECTOR DE CLASE (.foo)</H3>
-                <img src="https://blog.hubspot.es/hubfs/media/ejemploselectorclasecss.png" style="width: 500px;">
+                <center><img src="https://blog.hubspot.es/hubfs/media/ejemploselectorclasecss.png"
+                        style="width: 500px;"></center>
                 <h3>4. SELECTORES DE ID (#foo)</h3>
-                <img src="https://blog.hubspot.es/hubfs/media/ejemploselectoridcss.png" style="width: 500px;">
+                <center><img src="https://blog.hubspot.es/hubfs/media/ejemploselectoridcss.png" style="width: 500px;">
+                </center>
                 <h3>5. SELECTORES DE ATRIBUTO (a[foo])</h3>
-                <img src="https://blog.hubspot.es/hubfs/media/ejemploselectoratributocss.png" style="width: 500px;">
-                <br><br>
-                <a href="https://www.w3.org/TR/selectors-3/" style="color:black;" target="_blank">Mas acerca de
-                    selectores</a>
-                <h2 id="modeloCajas">MODELO DE CAJAS</h2>
-                <img src="https://lenguajecss.com/css/modelo-de-cajas/que-es/modelo-de-cajas.png" style="width: 500px;">
+                <center><img id="modeloCajas" src="https://blog.hubspot.es/hubfs/media/ejemploselectoratributocss.png"
+                        style="width: 500px;">
+                    <br ><br>
+                    <a id="cssLink" href="https://www.w3.org/TR/selectors-3/" style="color:black;" target="_blank">Mas
+                        acerca de
+                        selectores</a>
+                    <h2 >MODELO DE CAJAS</h2>
+                    <img src="https://lenguajecss.com/css/modelo-de-cajas/que-es/modelo-de-cajas.png"
+                        style="width: 500px;">
+                </center>
                 <pre>
             <b>Contenido</b>
 
@@ -154,7 +172,7 @@
             
             Es el área de relleno del elemento.
 
-            <b>Borde</b>
+            <b id="flexbox">Borde</b>
             
             Es el borde del elemento. 
 
@@ -163,8 +181,10 @@
             Es el margen del elemento. Se usa para separar el elemento de sus vecinos.
 
         </pre>
-                <h2 id="flexbox">FLEXBOX</h2>
-                <img src="https://aulaideal.com/wp-content/uploads/2020/08/flexbox-1.webp" style="width: 500px;">
+                <center>
+                    <h2 >FLEXBOX</h2>
+                    <img src="https://aulaideal.com/wp-content/uploads/2020/08/flexbox-1.webp" style="width: 500px;">
+                </center>
                 <pre>
             <B>flex-start</B>
 
